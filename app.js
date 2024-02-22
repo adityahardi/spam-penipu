@@ -1,122 +1,26 @@
 const { default: axios } = require("axios");
 
-const token = "bot6861974788:AAH_AbVplVpEG3XTRhVIgbMVqIeT-_y7vPQ";
-const message = "LO%20PENIPU%20KAN!!!!"
-const chatId = "6951548817";
+const token = "bot6852739481:AAEODLj8ikhz3HHHef7RdTB2nL5VJxrE6xo";
+const message = "KERJA%20YANG%20BENER%20LOOOO!!!!";
+const chatId = "6723234237";
 
-const url = `https://api.telegram.org/${token}/sendMessage?parse_mode=markdown&chat_id=${chatId}&text=${message}`
+const url = `https://api.telegram.org/${token}/sendMessage?parse_mode=markdown&chat_id=${chatId}&text=${message}`;
 
 async function sendMessage() {
-    try {
-        while (true) {
-            await axios.get(url)
-                .then((response) => {
-                    if (response.status == 200) {
-                        console.log(response.statusText)
-                    } else {
-                        console.log("message failed!")
-                    }
-                })
+  try {
+    while (true) {
+      await axios.get(url).then((response) => {
+        if (response.status == 200) {
+          console.log("Sending Spam MSG: " + message);
+          console.log(response.statusText);
+        } else {
+          console.log("message failed!");
         }
-
-    } catch (e) {
-        sendMessage();
+      });
     }
+  } catch (e) {
+    sendMessage();
+  }
 }
 
 sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-sendMessage();
-
